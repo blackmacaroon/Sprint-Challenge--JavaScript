@@ -29,14 +29,30 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. Describe the biggest difference between `.forEach` & `.map`.
+=========================================================================================
+Both .forEach and .map will iterate through every item in a given array, the biggest difference between the two is that .forEach needs to be told what to return, whereas .map will return an array with the sought data.
 
 2. What is the difference between a function and a method?
+=========================================================================================
+Both are call-able sub-programs, but methods exist within an object. Data passed to a function is explicit, whereas data passed to a method is implicit. 
 
 3. What is closure?
+=========================================================================================
+A closure is a funtcion within another function that has access to three scopes, it's own, it's parent function, as well as the global scope. 
+
 
 4. Describe the four rules of the 'this' keyword.
+=========================================================================================
+Window Binding - This one we avoid. When a function is called on the global scop, the 'this' keyword points at the global object.
+Implicit Binding - This is automatic and used for objects and their methods. It's easy to pick out and understand because the 'this' keyword will refer to the object immediately to the left of the dot when the function is invoked.
+Explicit Binding - This is for functions. You'll know what the 'this' keyword is pointing to because it will be used in conjunction with the .bind() .apply() or .call() methods
+New Binding - This is created with the creation of new objects by constructor functions. You'll know what 'this' is pointing to because it'll be bound to the object following the 'new' keyword.
+
 
 5. Why do we need super() in an extended class?
+=========================================================================================
+The 'super' keyword calls the constructor of the parent class and provides the child object access to the functions of it's parent. It's a shout out to the prototype of the parent and saves developers from a larger chunk of confusing syntax. 
+
 
 ## Project Set up
 
